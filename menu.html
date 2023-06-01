@@ -8,7 +8,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Alia Langshaw, Sofia Fernandez">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="refresh" content="30">
+	<meta http-equiv="refresh" content="300">
 	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Radley&display=swap" rel="stylesheet">
 	<style>
         .container1{
@@ -105,6 +105,21 @@
 			background-color: #5C372C;
 			color: #E2D2C2;
 		}
+
+		form {
+			text-align: left;
+			width: 100%;
+		}
+		h3 {
+			text-align: left;
+		}
+
+
+		.psa, .csa, .psw, .csw, .sauce, .drink, .submit {
+			display: inline-block;
+			margin-left: 4%;
+			margin-right: 4%;
+		}
     </style>
 </head>
 <body>
@@ -123,14 +138,56 @@
 		</ul>
 	</nav>
 	<main>
-        <h1>Menu Madness</h1><br>
-		<h2>Order</h2>
-		<form>
-			
+        <h1>Menu Madness</h1>
+		<h2>Order</h2><br>
+		<form action="https://formsubmit.co/fernandezsofi08@gmail.com" method="POST">
+			<section class="order">
+			<section class="psa">
+			<h3>Pretzel - Savory</h3>
+			<input type="checkbox" value="yes"> Original Pretzel <br>
+			<input type="checkbox" value="yes"> Hot Dog Pretzel <br>
+			<input type="checkbox" value="yes"> Chicken Pretzel <br><br>
+			</section>
+			<section class="csa">
+			<h3>Coconut - Savory</h3>
+			<input type="checkbox" value="yes"> Coconut Shrimp <br>
+			<input type="checkbox" value="yes"> Coconut Rice <br>
+			<input type="checkbox" value="yes">Coconut Curry Wrap <br><br>
+		</section>
+			<section class="psw">
+			<h3>Pretzel - Sweet</h3>
+			<input type="checkbox" value="yes"> Cinnamon Sugar Pretzel Bites <br>
+			<input type="checkbox" value="yes"> Peanut Butter Pretzel Cookie <br>
+			<input type="checkbox" value="yes"> Chocolate Pretzels <br><br>
+		</section>
+			<section class="csw">
+			<h3>Coconut - Sweet</h3>
+			<input type="checkbox" value="yes"> Coconut Ice Cream <br>
+			<input type="checkbox" value="yes"> Macaroons (5) <br>
+			<input type="checkbox" value="yes"> Coconut Cream Pie Slice <br><br>
+		</section>
+		<section class="sauce">
+			<h3>Sauces</h3>
+			<input type="checkbox" value="yes"> Chocolate <br>
+			<input type="checkbox" value="yes"> Cheese <br>
+			<input type="checkbox" value="yes"> Lime Crema <br><br>
+		</section>
+			<section class="drink">
+			<h3>Drinks</h3>
+			<input type="checkbox" value="yes"> Bottled Water <br>
+			<input type="checkbox" value="yes"> Sprite <br>
+			<input type="checkbox" value="yes"> Coca Cola <br>
+			<input type="checkbox" value="yes"> Coffee with Cream <br>
+			<input type="checkbox" value="yes"> Hot Chocolate <br>
+			<input type="checkbox" value="yes"> Iced Tea <br><br>
+		</section><br><br>
+		<section class="submit">
+			<input type="submit">&nbsp;<input type="reset">
+		</section>
 		</form>
 		<h2>PRETZELS - Savory</h2><br>
 		<div class="Menu">
-			<div class="box"><img src="images/Pretzel.png" height="75%" width="100%"> <div class="text">Original Pretzels<br>$4.28</div><button class="sb">Add To Cart</button></div>
+			<div class="box"><img src="images/Pretzel.png" height="75%" width="100%"> <div class="text">Original Pretzels<br>$4.28</div> Chrome <button class="sb">Add To Cart</button></div>
 			<div class="box"><img src="images/HotDogPretzel2.jpeg" height="75%" width="100%"> <div class="text">Hot Dog Pretzel<br>$6.28</div><button class="sb">Add To Cart</button></div>
 			<div class="box"><img src="images/Pretzel Sandwich.png" height="75%" width="100%"> <div class="text">Chicken Pretzel Sandwich<br>$12.28</div><button class="sb">Add To Cart</button></div>
         </div>
