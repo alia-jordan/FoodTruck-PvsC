@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pretzels vs Coconut</title>
+	<link rel="stylesheet" href="css/FoodTruck.css">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Alia Langshaw, Sofia Fernandez">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Radley&display=swap" rel="stylesheet">
+	<style>
+
+    th {
+        height: 40px;
+        width: 100px;
+        text-transform: uppercase;
+        background-color: #E2D2C2;
+    }
+    td {
+        width: 150px;
+        height: 92px;
+        vertical-align: text-top;
+        padding: 5px;
+
+    }
+    td:hover {
+        background-color:#E2D2C2;
+        transition: all ease 1s;
+        color:#453962;
+
+    }
+   table, th, td {
+    border-left: 3px solid #5C372C;
+    border-right: 3px solid #5C372C;
+    border-top: 3px solid #5C372C;
+    border-bottom: 3px solid #5C372C;
+    border-collapse: collapse;
+
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #E8DFD3;
+        position: relative;
+    }
+    caption {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Fredericka the Great', sans-serif;
+        color:#5C372C;
+    }
+
+    input[type=text] {
+        border: none;
+        border-bottom: 2px solid #5C372C;
+}
+	
+	input[type=submit] {
+		background-color: #E2D2C2
+		color: #5C372C;
+		}
+
+    </style>
+</head>
+<body>
+	<header></header>
+	<nav>
+		<ul>
+            <li><a href="index.html"><img src="images/SecondaryLogo.png" alt="sceondary logo" height="70px" width="130px" style="vertical-align: middle;"></a></li>
+			<li><a href="index.html">Home</li></a>
+			<li><a href="backstory.html">The Backstory</a></li>
+			<li><a href="calender.html">Calender</a></li>
+			<li><a href="menu.html">Menu Madness</a></li>
+			<li><a href="cvsp.html">Coconut or Pretzel?</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+        <h1>Calender of Events by Day</h1>
+        <table>
+            <br>
+            <caption>May</caption>
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td style="background-color: #E2D2C2">30</td>
+                <td>1<br>Not Open</td>
+                <td>2<br>Montclair, NJ</td>
+                <td>3<br>North Beach Boardwalk, NJ</td>
+                <td>4<br>Princetown University</td>
+                <td>5<br>Town Festival</td>
+                <td>6<br>Central Park</td>
+            </tr>
+            <tr>
+                <td>7<br>Central Park</td>
+                <td>8<br>Not Open</td>
+                <td>9<br>Special Event - Reserved</td>
+                <td>10<br>Columbia University</td>
+                <td>11<br>Washington Square - Outdoor Art Exhibit</td>
+                <td>12<br>Coney Island Beach</td>
+                <td>13<br>Coney Island Beach</td>
+            </tr>
+            <tr>
+                <td>14<br>Coney Island Beach</td>
+                <td>15<br>Not Open</td>
+                <td>16<br>Brooklyn Botanic Gardens</td>
+                <td>17<br>Yankee Stadium</td>
+                <td>18<br>Special Event - Reserved</td>
+                <td>19<br>Fashion Institute of Technology, NY</td>
+                <td>20<br>Jazz Music Festival</td>
+            </tr>
+            <tr>
+                <td>21<br>Brooklyn Museum</td>
+                <td>22<br>Not Open</td>
+                <td>23<br>Yankee Stadium</td>
+                <td>24<br>Special Event - Reserved</td>
+                <td>25<br>Central Park</td>
+                <td>26<br>Central Park</td>
+                <td>27<br>MetLife Stadium</td>
+            </tr>
+            <tr>
+                <td>28<br>MetLife Stadium</td>
+                <td>29<br>Not Open</td>
+                <td>30<br>Random Highschool Graduation</td>
+                <td>31<br>Berkeley, NY</td>
+                <td style="background-color: #E2D2C2">1</td>
+                <td style="background-color: #E2D2C2">2</td>
+                <td style="background-color: #E2D2C2">3</td>
+            </tr>
+        </table><br>
+
+        <h1>Request The Food Truck For June</h1><br>
+        <form action="https://formsubmit.co/fernandezsofi08@gmail.com" method="POST">
+            <input type="text" required="required" placeholder="Name"><br>
+            <input type="text" required="required" placeholder="Enter Email"><br>
+            <input type="text" required="required" placeholder="Location Name"><br><br>
+                <legend style="font-family: Times New Roman, Georgia, serif; font-weight: bold;">Address of Location</legend>
+                    <label> Street: <input type="text" name="street" id="street" size="54"</label><br><br>
+                    <labe> City: <input type="text" name="city" id="city"></label>
+                    <label> State: <input type="text" name="state" id="state" maxlength="2" size="5"></label>
+                    <label> Zip: <input type="text" name="zip" id="zip" maxlength="5" size="5"></label><br><br>
+            <label for="myDate"> Choose a Date:  </label><br>
+		    <input type="date" name="myDate" id="myDate"><br><br>
+            <label for="color"> Day of the Week: </label>
+		<input type="text" name="color" id="color" list="colors">
+		<datalist id="colors">
+			<option value="Sunday">
+			<option value="Tuesday">
+			<option value="Wednesday">
+			<option value="Thursday">
+			<option value="Friday">
+			<option value="Saturday">
+		</datalist><br><br>
+        <input type="submit">&nbsp;<input type="reset">
+        </form>
+		<br>
+    </main>
+	<footer>
+      <br>
+      <center>
+	  <h3> Contact Us Today! </h3><br>
+        <small>&copy; Copyright 2023. All Rights Reserved.</small> &nbsp;
+          <a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="Instagram Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a>
+          <a href="https://www.facebook.com"><img src="images/facebook.jpg" alt="Facebook Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a>
+          <a href="https://www.youtube.com"><img src="images/youtube.jpg" alt="YouTube Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a><br>
+          <a href="mailto:notgonnahappenn@gmail.com"><img src="images/email.jpg" alt="Email Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a> &nbsp;
+          <a href="mailto:notgonnahappenn@gmail.com" class="email">coconutvspretzels@gmail.com</a> &nbsp;
+        </center>
+        <br>
+    </footer>
+</body>
+</html>

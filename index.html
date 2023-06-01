@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pretzels vs Coconut</title>
+	<link rel="stylesheet" href="css/FoodTruck.css">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Alia Langshaw, Sofia Fernandez">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="180">
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Radley&display=swap" rel="stylesheet">
+	<style>
+		* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto; 
+  background-color: #826359;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.mySlides {
+  display: none;
+  width: 65%;
+  margin: auto;
+  height: 65%;
+
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 2s ease;
+  border-radius: 0 3px 3px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s ease;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+	</style>
+
+	
+</head>
+<body>
+<!-- https://www.backdoordonuts.com/ -->
+<!-- https://sweetmaescookies.com/-->
+	<header></header>
+	<nav>
+		<ul>
+			<li><a href="index.html"><img src="images/SecondaryLogo.png" alt="sceondary logo" height="70px" width="130px" style="vertical-align: middle;"></a></li>
+			<li><a href="index.html">Home</li></a>
+			<li><a href="backstory.html">The Backstory</a></li>
+			<li><a href="calender.html">Calender </a></li>
+			<li><a href="menu.html">Menu Madness</a></li>
+			<li><a href="cvsp.html">Coconut or Pretzel?</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h1>The debate is on: Pretzels vs coconuts</h1>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 5</div>
+			  <img src="images/Logo.jpg" style="width:100%; height:600px">
+			</div>
+		  
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 5</div>
+			  <img src="images/HotDogPretzel.jpeg" style="width:100%; height:600px">
+			  <div class="text">Hot Dog Pretzel</div>
+			</div>
+		  
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 5</div>
+			  <img src="images/CoconutShrimp.jpeg" style="width:100%; height:600px;">
+			  <div class="text">Coconut Shrimp</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="images/CinnamonPretzels.jpeg" style="width:100%; height:600px;">
+				<div class="text">Cinnamon Pretzel Bites</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="images/CoconutIceCream.jpeg" style="width:100%; height:600px;">
+				<div class="text">Coconut Ice Cream</div>
+			  </div>
+		  
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  </div>
+		  <br>
+
+		  <div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		  </div>
+	
+
+		  <script>
+			let slideIndex = 1;
+				showSlides(slideIndex);
+				
+				// Next/previous controls
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				// Thumbnail image controls
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+	</main>
+	<footer>
+      <br>
+      <center>
+	  <h3> Contact Us Today! </h3><br>
+        <small>&copy; Copyright 2023. All Rights Reserved.</small> &nbsp;
+          <a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="Instagram Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a>
+          <a href="https://www.facebook.com"><img src="images/facebook.jpg" alt="Facebook Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a>
+          <a href="https://www.youtube.com"><img src="images/youtube.jpg" alt="YouTube Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a><br>
+          <a href="mailto:notgonnahappenn@gmail.com"><img src="images/email.jpg" alt="Email Icon" height="40" width="40" class="SocialMedia" style="vertical-align: middle;"></a> &nbsp;
+          <a href="mailto:notgonnahappenn@gmail.com" class="email">coconutvspretzels@gmail.com</a> &nbsp;
+        </center>
+        <br>
+    </footer>
+</body>
+</html>
